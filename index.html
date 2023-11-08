@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" id="logo_txt">Redactr</a>
+      </nav>
+    </header>
+
+    <main>
+      <textarea id="input"></textarea>
+
+      <input
+        type="text"
+        id="words_to_change"
+        placeholder="Enter the word or words to be redacted"
+      />
+
+      <input
+        type="text"
+        id="redactr"
+        placeholder="word to replace your selections # is default"
+      />
+
+      <input type="button" value="Get result" />
+
+      <textarea id="output"> </textarea>
+
+      <div id="other_info">
+        <div>
+          <p>Time Used: <span id="time_used"></span></p>
+        </div>
+        <div>
+          <p>Words Scanned: <span id="scanned_words"></span></p>
+        </div>
+        <div>
+          <p>Words Matched: <span id="matched_words"></span></p>
+        </div>
+        <div>
+          <p>Characters Matched: <span id="matched_characters"></span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
