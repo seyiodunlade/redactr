@@ -4,6 +4,102 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" id="logo_txt">Redactr</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <section>
+          <h4 id="errors"></h4>
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'input_div')"
+              id="defaultOpen"
+            >
+              Input
+            </button>
+            <button
+              class="tablinks disabled"
+              id="resultBtn"
+              onclick="openTab(event, 'result_div')"
+            >
+              Result
+            </button>
+          </div>
+
+          <div id="input_div" class="tabcontent">
+            <textarea id="input"></textarea>
+          </div>
+
+          <div id="result_div" class="tabcontent">
+            <textarea id="result"></textarea>
+          </div>
+        </section>
+
+        <section>
+          <input
+            type="text"
+            id="words_to_change"
+            placeholder="Enter the word or words to be redacted"
+          />
+
+          <input
+            type="text"
+            id="redactr"
+            placeholder="word to replace your selections # is default"
+          />
+          <br />
+          <br />
+
+          <input type="button" value="Get result" />
+        </section>
+      </div>
+
+      <aside>
+        <div id="other_info">
+          <div>
+            <p>Time taken:</p>
+            <span id="time_taken">0.0034s</span>
+          </div>
+          <div>
+            <p>Words Scanned:</p>
+            <span id="words_scanned">56</span>
+          </div>
+          <div>
+            <p>Words Matched:</p>
+            <span id="words_matched">12</span>
+          </div>
+          <div>
+            <p>Characters Matched:</p>
+            <span id="characters_matched">23</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p style="font-weight: 400">
+        &copy; Copyright 2023 Redactr. All righs reserved
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -49,4 +145,4 @@
 
     <script src="index.js"></script>
   </body>
-</html>
+</html> -->
