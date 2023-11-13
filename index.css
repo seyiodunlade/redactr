@@ -161,3 +161,101 @@ main input[type="button"]:hover{
     justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+
+@media screen and (max-width: 600px) {
+  
+  header{
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    height: 37vh;
+  }
+
+  section input[type='text']{
+    width: 100%;
+    padding: 10px 16px;
+    margin: 6px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+  }
+
+  main input[type="button"]{
+    width: 70%;
+    background-color: rgb(0, 37, 46);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+  #other_info{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: left;
+    height: fit-content;
+  }
+
+  #other_info p {
+    text-align: left;
+    margin-bottom: 6px !important;
+  }
+ 
+  footer{
+
+    font-size: 13px;
+
+  }
+
+}
+
+@media screen and (max-width: 886px) {
+  main {
+    display: block;
+    text-align: center;
+    height: fit-content;
+  }
+
+  main > div{
+    width: 85vw;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+
+  .tab, textarea{
+    width: 85vw;
+  }
+
+  textarea{
+    height: 35vh;
+  }
+
+  section input[type='text']{
+    width: 100%;
+
+  }
+
+  #other_info{
+    width: 80vw;
+    margin: 0 auto;
+    text-align: left;
+    height: fit-content;
+  }
+
+  #other_info p {
+    text-align: left;
+  }
+
+  footer{
+
+    font-size: 13px;
+
+  }
+}
+
